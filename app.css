@@ -5,8 +5,8 @@
     width: 800px;
     margin: 5em auto;
     position: fixed;
-    top: -15px;
-    left: 25%;
+    /* top: 50px; */
+    /* left: 55%; */
     display: flex;
     visibility: hidden;
 }
@@ -34,11 +34,17 @@
     .side.one {
     width: 320px;
     transform: skew(10deg, 20deg);
-    background: linear-gradient(90deg, #fff, #fff 40%, #ddd);
+    background: linear-gradient(90deg, #fea2a2, #fefafa 40%, #fecccc);
+    background-image: url(https://media.istockphoto.com/id/1445790453/photo/the-heart-shaped-in-red-shiny-glitter-on-pastel-pink-background.jpg?s=612x612&w=0&k=20&c=UCxeEcYsYrAWBztmoGBWhe65S5Jl0F7f3pOzVo3Ko9k=);
+    justify-content: center;
+    align-items: center;
+background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     }
     .side.two {
     transform: skew(10deg, -15deg);
-    background: linear-gradient(-90deg, #fff, #fff 40%, #f0f0f0);
+    background: linear-gradient(-90deg,  #fbd8d8, #fff 40%, #ffd8d8);
     }
 
     body {
@@ -171,3 +177,22 @@
     .valentines-day:hover .text {
     transform: translateY(-50px);
     }
+
+
+    /* Mobile Screen */
+@media screen and (max-width: 600px) {
+    #card {
+        width: 90%; /* Adjust width for mobile screens */
+        left: 5%; /* Center the card horizontally */
+    }
+    #card p {
+        padding-left: 15px; /* Adjust padding for mobile screens */
+        padding-right: 15px; /* Adjust padding for mobile screens */
+    }
+    .valentines-day {
+        margin-top: 50px; /* Add margin for better display on mobile */
+    }
+    .text {
+        font-size: 1em; /* Adjust font size for mobile screens */
+    }
+}
